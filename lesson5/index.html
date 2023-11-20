@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 5</title>
+
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Lesson №5</h1>
+		<h2>Задачі</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="./task-2.html">Поступово генерувати 100 випадкових чисел від 1 до 1000. Підрахувати яких чисел більше: парних чи непарних.</a></li>
+			<li><a target="_blank" href="./task-1.html">Вивести на екран номери місяців весни і літа (від 3 до 8)</a></li>
+			<li><a target="_blank" href="./task0.html">Вивести на екран 8 кнопок з написом “Hello</a></li>
+			<li><a target="_blank" href="./task1.html">Вивести з використанням циклів маркований список з випадковими числами (1-100). Кількість випадкових чисел вводиться користувачем.</a></li>
+			<li><a target="_blank" href="./task2.html">Створити 10 елементів для введення цін продуктів</a></li>
+			<li><a target="_blank" href="./task3.html">Вивести таблицю з одним рядком і 7 стовпцями.</a></li>
+			<li><a target="_blank" href="./task4.html">Вивести таблицю з 3 рядків і 7 стовпців</a></li>
+			<li><a target="_blank" href="./task5.html">Вивести таблицю</a></li>
+			<li><a target="_blank" href="./task6.html">Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній)</a></li>
+			<li><a target="_blank" href="./task7.html">Вивести на екран N абзаців (N вводиться користувачем)</a></li>
+			<li><a target="_blank" href="./task8.html">Користувач загадує підсвідомо число. За 3 спроби комп’ютер намагається вгадати число користувача (використати confirm).</a></li>
+			<li><a target="_blank" href="./task9.html">Користувач загадує число. Комп’ютер задає питання поки не вгадає число користувача (використати confirm).</a></li>
+			<li><a target="_blank" href="./task10.html">Знайти суму всіх непарних чисел, що знаходяться між заданими користувачем числами.</a></li>
+			<li><a target="_blank" href="./task11.html">Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами.</a></li>
+			<li><a target="_blank" href="./task12.html">Ігровий автомат. Випадково вибираємо зображення у 3 позиціях. Вибір у кожній позиції вибирається як одне з чотирьох зображень. Вивести ці зображення і повідомити виграш користувача (три перших зображення 100 грн, три других – 200, три третіх – 500, три четвертих зображення – 1000грн). Використати цикли і switch (для вибору зображення за номером).</a></li>
+			<li><a target="_blank" href="./task13.html">Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів користувач намагається потопити корабель.</a></li>
+			<li><a target="_blank" href="./task14.html">Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих пір, поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно ввести).</a></li>
+			<li><a target="_blank" href="./task15.html">Користувача поступово вводить показники температури протягом року. Знайти середню температуру.</a></li>
+			<li><a target="_blank" href="./task16.html">Користувач поступово вводить прибуток магазину за кожен день протягом N тижнів. Знайти загальну величину прибутку та вивести величину прибутку протягом кожного окремого тижня.</a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h3>Дякую за перевірку!</h3>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	h3 {
+		color: #ebe691;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
