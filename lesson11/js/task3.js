@@ -58,7 +58,7 @@ function getUserShot(table) {
       alert(`Ви не влучили :(\n${getTableString(table)}`);
       numberOfShots--;
     }
-  } while (numberOfShots > 0 && table[userRow][userColumn] !== "🔥");
+  } while (numberOfShots > 0 && table.flat().includes("⛵️"));
   return table;
 }
 document.write(`Кінець гри!<br>${getUserShot(table)}`);
