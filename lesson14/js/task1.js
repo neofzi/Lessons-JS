@@ -121,7 +121,11 @@ console.log(sortBySiteCostDescending);
 
 //!Задача №1.7
 // Створити 2 окремих списки з копіями об’єктів, що містять сайти з вартість до 10000 і більше 10000
-let moreThan10k = companies.filter((el) => el.siteCost > 10000);
+let moreThan10k = companies
+  .filter((el) => el.siteCost > 10000)
+  .map((el) => JSON.parse(JSON.stringify(el)));
 console.log(moreThan10k);
-let lessThan10k = companies.filter((el) => el.siteCost < 10000);
+let lessThan10k = companies
+  .filter((el) => el.siteCost < 10000)
+  .map((el) => JSON.parse(JSON.stringify(el)));
 console.log(lessThan10k);

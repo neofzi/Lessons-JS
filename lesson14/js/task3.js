@@ -482,10 +482,10 @@ console.log(availableProducts);
 // сформувати новий список об”єктів тільки доступних  для продажу товарів, які міститимуть тільки ідентифікатор товару (id), нову ціну (price), стару ціну (old_price), та ціну у доларах (usd_price)
 let newArrProduct = dataList
   .filter((product) => product.sell_status === "available")
-  .map((product) => ({
-    id: product.id,
-    price: product.price,
-    old_price: product.old_price,
-    usd_price: product.usd_price,
+  .map(({ id, price, old_price, usd_price }) => ({
+    id,
+    price,
+    old_price,
+    usd_price,
   }));
 console.log(newArrProduct);
