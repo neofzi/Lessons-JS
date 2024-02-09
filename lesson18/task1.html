@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 1</title>
+</head>
+
+<body>
+	<div class="page__lesson-1 lesson-1">
+		<div class="lesson-1__body">
+			<div class="lesson-1__top-block">
+				<input autocomplete="off" type="text" value="" class="lesson-1__input">
+			</div>
+			<div class="lesson-1__buttons">
+				<button type="button" data-value class="lesson-1__btn">1</button>
+				<button type="button" data-value class="lesson-1__btn">2</button>
+				<button type="button" data-value class="lesson-1__btn">3</button>
+				<button type="button" data-operation class="lesson-1__btn">+</button>
+				<button type="button" data-value class="lesson-1__btn">4</button>
+				<button type="button" data-value class="lesson-1__btn">5</button>
+				<button type="button" data-value class="lesson-1__btn">6</button>
+				<button type="button" data-operation class="lesson-1__btn">-</button>
+				<button type="button" data-value class="lesson-1__btn">7</button>
+				<button type="button" data-value class="lesson-1__btn">8</button>
+				<button type="button" data-value class="lesson-1__btn">9</button>
+				<button type="button" data-operation class="lesson-1__btn">*</button>
+				<button type="button" data-operation class="lesson-1__btn">/</button>
+				<button type="button" data-operation class="lesson-1__btn lesson-1__btn--width">=</button>
+				<button type="button" data-operation class="lesson-1__btn">AC</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="./js/task1.js"></script>
+<style>
+	body {
+		background-color: #5e5373;
+		color: #fff;
+	}
+
+	.lesson-1__body {
+		padding: 20px;
+		background-color: #343434;
+		border-radius: 20px;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.lesson-1__top-block {
+		background-color: #fff;
+		border-radius: 5px;
+		overflow: hidden;
+		margin-bottom: 30px;
+	}
+
+	.lesson-1__input {
+		width: 100%;
+		padding: 10px;
+		background-color: rgba(200, 200, 13, 0.5);
+		text-align: right;
+	}
+
+	.lesson-1__buttons {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 15px;
+	}
+
+	.lesson-1__btn {
+		cursor: pointer;
+		padding: 5px;
+		background-color: #c8c80d;
+		border-radius: 10px;
+		font-size: 20px;
+		text-align: center;
+		transition: background-color 0.3s;
+	}
+
+	.lesson-1__btn:hover {
+		background-color: #979705;
+	}
+
+	.lesson-1__btn--width {
+		grid-column: span 2;
+	}
+</style>
+
+</html>

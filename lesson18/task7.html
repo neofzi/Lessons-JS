@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 7</title>
+</head>
+
+<body>
+	<form>
+		<label for="transport">Транспорт:</label>
+		<select id="transport" name="transport" class="transport">
+			<option value="399">Авто</option>
+			<option value="299">Автобус</option>
+			<option value="999">Літак</option>
+		</select><br><br>
+
+		<label>Харчування:</label><br>
+		<input type="checkbox" name="meal" value="120" class="checkbox">
+		<label>Сніданок</label><br>
+		<input type="checkbox" name="meal" value="180" class="checkbox">
+		<label>Обід</label><br>
+		<input type="checkbox" name="meal" value="150" class="checkbox">
+		<label>Вечеря</label><br><br>
+
+		<label>Гід:</label><br>
+		<input type="radio" name="guide" value="300" class="guide">
+		<label>Гід 1</label><br>
+		<input type="radio" name="guide" value="350" class="guide">
+		<label>Гід 2</label><br>
+		<input type="radio" name="guide" value="400" class="guide">
+		<label>Гід 3</label><br><br>
+
+		<button id="button" type="button">Розрахувати</button>
+	</form>
+	<div id="totalCost"></div>
+</body>
+<script src="./js/task7.js"></script>
+<style>
+	body {
+		background-color: #5e5373;
+		color: #fff;
+	}
+</style>
+
+</html>
