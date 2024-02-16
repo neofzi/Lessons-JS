@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 7</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container"></div>
+	</div>
+</body>
+<script src="./js/task7.js"></script>
+<style>
+	body {
+		background-color: #5e5373;
+		color: #fff;
+	}
+
+	.wrapper {
+		position: relative;
+	}
+
+	.lazer {
+		height: 100px;
+		width: 10px;
+		background-color: #62ce0f;
+		border-radius: 20px;
+		position: fixed;
+		z-index: -1;
+		animation:
+			neon 1.5s ease-in-out infinite alternate,
+			fall linear infinite;
+	}
+
+	@keyframes fall {
+		0% {
+			top: -100px;
+		}
+
+		100% {
+			top: 100vh;
+		}
+	}
+
+	@keyframes neon {
+		0% {
+			box-shadow:
+				0 0 10px #57bf08,
+				0 0 40px #57bf08,
+				0 0 80px #57bf08;
+		}
+
+		100% {
+			box-shadow:
+				0 0 20px #57bf08,
+				0 0 30px #57bf08,
+				0 0 60px #57bf08;
+		}
+	}
+</style>
+
+</html>

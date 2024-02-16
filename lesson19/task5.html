@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 5</title>
+</head>
+
+<body>
+	<div class="cards"></div>
+</body>
+<script src="./js/task5.js"></script>
+<style>
+	body {
+		color: #fff;
+	}
+
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	.cards {
+		max-width: 1200px;
+		padding: 0px 15px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+		gap: 20px;
+	}
+
+	.img-box {
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.img-box img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.title-product {
+		font-weight: 600;
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.card-border {
+		border: 2px solid green;
+	}
+
+	.price-product {
+		color: red;
+		font-weight: 700;
+		font-size: 20px;
+	}
+</style>
+
+</html>
