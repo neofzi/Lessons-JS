@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 1</title>
+</head>
+
+<body>
+	<div class="stars"></div>
+</body>
+<script src="./js/task1.js"></script>
+<style>
+	body {
+		background-color: #000;
+		color: #fff;
+	}
+
+	.stars {
+		overflow: hidden;
+	}
+
+	.star {
+		overflow: hidden;
+		height: 15px;
+		width: 15px;
+		background-color: #ffcc00;
+		position: absolute;
+		transition: all 0.3s;
+		clip-path: polygon(50% 0%,
+				61% 35%,
+				98% 35%,
+				68% 57%,
+				79% 91%,
+				50% 70%,
+				21% 91%,
+				32% 57%,
+				2% 35%,
+				39% 35%);
+	}
+</style>
+
+</html>
