@@ -83,13 +83,13 @@ class Bird extends ParentElement {
 }
 
 window.onload = function () {
-  let house = new House("/img/house.png", 10, 10, 1000);
+  let house = new House("img/house.png", 10, 10, 1000);
   house.render(".box");
   house.increase();
-  let dog = new Dog("/img/dog.png", 20, 20, 1000);
+  let dog = new Dog("img/dog.png", 20, 20, 1000);
   dog.render(".box");
   dog.changeCoordinateX();
-  let bird = new Bird("/img/bird.png", 10, 30, 1000);
+  let bird = new Bird("img/bird.png", 10, 30, 1000);
   bird.render(".box");
   bird.changePosition();
 };
