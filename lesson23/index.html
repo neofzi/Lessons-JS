@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 23</title>
+
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Lesson №23</h1>
+		<h2>Задачі</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="./task1.html">Дано масив рядків. Вивести ті, у яких є цифри (використати метод test та регулярні вирази).</a></li>
+			<li><a target="_blank" href="./task2.html">Дано масив рядків. Вивести ті, у яких немає цифр.</a></li>
+			<li><a target="_blank" href="./task3.html">Дано масив рядків. Вивести ті, у яких є голосні літери.</a></li>
+			<li><a target="_blank" href="./task4.html">Дано масив рядків. Вивести ті, у яких немає голосних літер.</a></li>
+			<li><a target="_blank" href="./task5.html">Дано масив рядків. Вивести ті, у яких є або цифра 1 або цифра 3.</a></li>
+			<li><a target="_blank" href="./task6.html">Дано рядок тексту, вивести усі числа, які є у тексті.</a></li>
+			<li><a target="_blank" href="./task7.html">Дано рядок тексту. Знайти усі знаки пунктуації, які були використано.</a></li>
+			<li><a target="_blank" href="./task8.html">Дано рядок тексту. Вивести усі складові, які розділені розділовими знаками.</a></li>
+			<li><a target="_blank" href="./task9.html">Дано рядок тексту. Перевірити, чи містить він дату у форматі dd.mm.yyyy (dd- день, mm- місяць, yyyy- рік).</a></li>
+			<li><a target="_blank" href="./task10.html">Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку.</a></li>
+			<li><a target="_blank" href="./task11.html">Визначити чи може бути рядок тексту номером банківської картки (приклад: «4142-3433-2323-3434»). Знайти усі такі номери.</a></li>
+			<li><a target="_blank" href="./task12.html">Дано адресу сайту. Визначити, чи є він урядовим (містить домен “gov”)</a></li>
+			<li><a target="_blank" href="./task13.html">Вибрати усі роки після 2021 року з отриманого повідомлення</a></li>
+			<li><a target="_blank" href="./task14.html">Дано номер телефону. Перевірити, чи є цей телефон телефоном з України (починаєтсья на «+38»)</a></li>
+			<li><a target="_blank" href="./task15.html">Користувач вводить прізвище та ім’я в одному рядку через пробіл. Замінити пробіл на дефіс.</a></li>
+			<li><a target="_blank" href="./task16.html">Користувач вводить дату у форматі «день.місяць.рік». Отримати рядкове представлення дати у форматі «день/місяць/рік»</a></li>
+			<li><a target="_blank" href="./task17.html">Користувач вводить день (номер дня (0-6) або «sun,mon,tue,wed,thu,fri,sat»). Визначити, чи є це день вихідним</a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h3>Дякую за перевірку!</h3>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	h3 {
+		color: #ebe691;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
